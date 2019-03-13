@@ -54,7 +54,10 @@
                             </div>
                             
                             <h1>Nickname:</h1>
-                <input type="text" id="tBox">
+                            <small><div id="nicknameAlert"></div></small>
+                            <input type="text" id="tBox">
+                            <p id="warning">Create pin number to re-use nickname</p>
+                            <input type="text" id="tBox2">
                 <br>
                              <!--JS-->
                 <button id="startGameButton" type="button" class="btn btn-info">Start Game</button>
@@ -79,13 +82,13 @@
             
             
             <div class="col-sm-11" id="table">
-                    <h3>Top Players</h3>
+                    <h3 id="tp">Top Players</h3>
                 <table class="table table-sm text-center" id=tableText>
                     
                     <tr id="tableHead">
-                      <th>Player</th>
-                      <th>Score</th>
-                      <th>Topic</th>
+                      <th id="P">Player</th>
+                      <th id="S">Score</th>
+                      <th id="T">Topic</th>
                     
                     </tr>
                     <div class="tableItems">
@@ -123,6 +126,6 @@
     
             
     
-    
+  
 </body>
 </html>
